@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Визитка</title>
+    <link href="style.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+    <h1 class="header__logo">визитка</h1>
+    <div class="container">
+      <div class="info">
+        
+
+        <div class="info-text">
+          <h1>Раджабов Марат Эрикович</h1>
+
+          <h4>Мои социальные сети</h4>
+          
+          <a href="https://github.com/Marat555" target="_blank">GitHub</a>
+          |
+          <a target="_blank" href="https://t.me/siayyy">Telegram</a>
+        </div>
+        
+      </div>
+
+      <div class="card bg-yellow">
+        <h2>О себе</h2>
+        <ol class="list">
+          <li>19 лет </li>
+          <li>Студент МТУСИ</li>  
+
+        </ol>
+      </div>
+
+      
+     
+
+      <button onclick="toggleLabInfo()">Показать/скрыть информацию о лабораторных работах</button>
+
+      <div id="labInfo" class="lab-info">
+          <h2>Информация о прошлых лабораторных работах</h2>
+          <img src="photo.png" class="photo"/>
+          <p>Лабораторная работа №2: ...</p>
+          <p>Лабораторная работа №3: ...</p>
+      </div>
+      <script>
+        function toggleLabInfo() {
+    var labInfo = document.getElementById('labInfo');
+    if (labInfo.style.display === 'none') {
+        labInfo.style.display = 'block';
+    } else {
+        labInfo.style.display = 'none';
+    }
+}
+        </script>
+      
+      <div class="contact">
+        <h2>Связаться со мной</h2>
+
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите ваше имя...">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Ваш email:</label>
+              <input type="email" id="email" placeholder="Введите email...">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="text">Вашe сообщение:</label>
+            
+            <textarea id="text" rows="2" cols="15"></textarea>
+          </div>
+
+          <input class="btn" type="submit" value="Связаться!">
+        </form>
+      </div>
+
+
+      <div class="position">
+        <div class="box"></div>
+      </div>
+    </div>
+
+    
+
+    <div style="margin-bottom: 500px;;"></div>
+  </body>
+</html>
